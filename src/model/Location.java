@@ -1,12 +1,14 @@
 package model;
 
-public class Type {
+public class Location {
     private int id;
     private String name;
+    private String idRegion;
     
-    public Type (int id, String name){
+    public Location(int id, String name, String idRegion) {
         this.id = id;
         this.name = name;
+        this.idRegion = idRegion;
     }
 
     public int getId() {
@@ -24,6 +26,16 @@ public class Type {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getId_region() {
+        return idRegion;
+    }
+
+    public void setId_region(String idRegion) {
+        this.idRegion = idRegion;
+    }
+
+
 
     
 }

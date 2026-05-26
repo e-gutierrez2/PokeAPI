@@ -14,9 +14,10 @@ DROP TABLE IF EXISTS generation;
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE generation (
-    id_generation INTEGER PRIMARY KEY NOT NULL,
-    name          TEXT NOT NULL UNIQUE,
-    main_region   TEXT NOT NULL
+    id_generation   INTEGER PRIMARY KEY NOT NULL,
+    name            TEXT NOT NULL UNIQUE,
+    id_region       INTEGER NOT NULL, 
+    FOREIGN KEY (id_main_region) REFERENCES region(id_region)
 );
 
 CREATE TABLE region (

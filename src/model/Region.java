@@ -1,12 +1,14 @@
 package model;
 
-public class Type {
+public class Region {
     private int id;
     private String name;
+    private int idGeneration;
     
-    public Type (int id, String name){
+    public Region(int id, String name, int idGeneration) {
         this.id = id;
         this.name = name;
+        this.idGeneration = idGeneration;
     }
 
     public int getId() {
@@ -25,5 +27,12 @@ public class Type {
         this.name = name;
     }
 
-    
+    public int getIdGeneration() {
+        return idGeneration;
+    }
+
+    public void setIdGeneration(int idGeneration) {
+        this.idGeneration = idGeneration;
+    }
+
 }

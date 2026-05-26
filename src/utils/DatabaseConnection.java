@@ -25,7 +25,7 @@ public class DatabaseConnection {
             throw new RuntimeException("Driver SQLite no encontrado");
         }
         catch (SQLException e) {
-            throw new RuntimeException("Error al conectar a la BBDD")
+            throw new RuntimeException("Error al conectar a la BBDD");
         }
     }
 
